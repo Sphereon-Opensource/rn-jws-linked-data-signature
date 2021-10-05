@@ -1,10 +1,10 @@
 {
-  "name": "@digitalbazaar/jws-linked-data-signature",
-  "version": "1.0.2-0",
+  "name": "@sphereon/rn-jws-linked-data-signature",
+  "version": "1.0.2-1",
   "description": "Abstract Linked Data Proof suite for use with jsonld-signatures with Ed25519Signature2018 and RsaSignature2018 suites.",
   "homepage": "https://github.com/digitalbazaar/jws-linked-data-signature",
   "author": {
-    "name": "Digital Bazaar, Inc.",
+    "name": "Digital Bazaar, Inc.m forked by Sphereon for React Native support",
     "email": "support@digitalbazaar.com",
     "url": "https://digitalbazaar.com/"
   },
@@ -25,7 +25,7 @@
   "dependencies": {
     "base64url-universal": "^1.1.0",
     "esm": "^3.2.25",
-    "jsonld-signatures": "^9.0.2"
+    "@sphereon/rn-jsonld-signatures": "^9.3.1-0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -74,6 +74,6 @@
     "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text-summary npm run test-node",
     "coverage-ci": "cross-env NODE_ENV=test nyc --reporter=text-lcov npm run test-node > coverage.lcov",
     "coverage-report": "nyc report",
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   }
 }
